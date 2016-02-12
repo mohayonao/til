@@ -1,8 +1,8 @@
-# AudioNode のイベントを確実に実行させる
+# AudioNode のイベントを確実に発火させる
 
 - http://stackoverflow.com/questions/24338144/chrome-onaudioprocess-stops-getting-called-after-a-while
 
-コードから参照されない AudioNode は GC に回収されて、イベントも消えてしまう。
+コードから参照されない AudioNode は GC に回収されて、イベントハンドラも消えてしまう。
 
 ```js
 function beep(audioContext) {
