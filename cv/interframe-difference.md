@@ -13,11 +13,6 @@
 import cv2
 import numpy as np
 
-def calc_max_diff(frames):
-    frames, im0 = frames[:-1], frames[-1]
-    frames = [ cv2.absdiff(im1, im0) for im1 in frames ]
-    return np.max(frames, axis=0)
-
 N = 3
 THRESH = 20
 
@@ -30,17 +25,17 @@ while True:
     im = cv2.cvtColor(im, cv2.COLOR_BGR2GRAY)
 
     frames.append(im)
+    frames = frames[-N:]
+
     if len(frames) < N:
         continue
 
-    im = calc_max_diff(frames)
+    im = np.max([ cv2.absdiff(im, im1) for im1 in frames[:-1] ], axis=0)
     im = cv2.medianBlur(im, 5)
     im = cv2.threshold(im, THRESH, 255, cv2.THRESH_BINARY)[1]
 
-    frames = frames[1:]
-
     cv2.imshow('preview', im)
 
-    if cv2.waitKey(5) & 0xFF == 27:
+    if cv2.waitKey(10) & 0xFF == 27:
         break
 ```
