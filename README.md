@@ -21,6 +21,7 @@ A collection of knowledge that I learn day to day.
 ### python
 
   - [クラスを取得する](python/get-class.md)
+  - [実行中ファイルのあるディレクトリへの相対パスを取得する](python/get-dirname.md)
 
 ### webaudio
 
