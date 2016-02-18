@@ -17,6 +17,7 @@ A collection of knowledge that I learn day to day.
   - [Nフレームの平均画像を計算する](cv/compute-average-image-in-n-frames.md)
   - [ヒストグラムを計算する](cv/compute-histogram.md)
   - [フレーム間差分法による動体検出](cv/interframe-difference.md)
+  - [VideoCapture の再生位置を指定する](cv/seek-video-capture.md)
 
 ### python
 
