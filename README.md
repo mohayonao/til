@@ -25,6 +25,7 @@ A collection of knowledge that I learn day to day.
 
 ### webaudio
 
+  - [再生位置を変更できる BufferSourceNode](webaudio/seek-buffer-source-node.md)
   - [iOS で Web Audio を開始する](webaudio/start-web-audio-in-ios.md)
   - [AudioNode のイベントを確実に発火させる](webaudio/surely-emit-audionode-event.md)
 
