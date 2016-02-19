@@ -24,6 +24,7 @@ A collection of knowledge that I learn day to day.
   - [PyPlot を使ったグラフの描画](python/draw-graph-with-pyplot.md)
   - [クラスを取得する](python/get-class.md)
   - [実行中ファイルのあるディレクトリへの相対パスを取得する](python/get-dirname.md)
+  - [演算子の優先順位](python/operator-precedence.md)
 
 ### webaudio
 
