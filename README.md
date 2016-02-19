@@ -8,6 +8,7 @@ A collection of knowledge that I learn day to day.
 
 * [cv](#cv)
 * [python](#python)
+* [supercollider](#supercollider)
 * [webaudio](#webaudio)
 
 ---
@@ -25,6 +26,10 @@ A collection of knowledge that I learn day to day.
   - [クラスを取得する](python/get-class.md)
   - [実行中ファイルのあるディレクトリへの相対パスを取得する](python/get-dirname.md)
   - [演算子の優先順位](python/operator-precedence.md)
+
+### supercollider
+
+  - [波形を見る](supercollider/plot-signal.md)
 
 ### webaudio
 
